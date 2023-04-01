@@ -145,8 +145,8 @@ Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURICom
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     GojoMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
-⭐✑ هلا👋 @${num.split("@")[0]},
-⭐✑ نورت جروبنا ${metadata.subject}
+⭐✑ يا هلا و مرحبا @${num.split("@")[0]},
+⭐✑ كل شيء يرحب 😘 بك كل شيء يتبسم ويتوهج فرحاً بقدومك 💝كل شيء ينمق عبارات الترحيب ويصوغ كلمات الحب لوجودك كل شيء ينتظر مشاركاتك وقلمك الرائع وإبداعاتك كل شيء يردد حياك الله💕😍. ${metadata.subject}
 
 ⭐✑ الوصف : ${metadata.desc}
 
@@ -154,7 +154,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
                 } else if (anu.action == 'remove') {
                     GojoMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} غادر ${metadata.subject}
 
-⭐✑ تطلع يجي غيرك 😌✨` })
+⭐✑  تطلع يجي الف واحد غيرك 😌✨` })
                 }
             }
         } catch (err) {
